@@ -1,0 +1,49 @@
+// Grid configuration
+///////////////////////////////
+
+// Image path
+$image-url: "../images/" !default;
+
+// Fonts
+$main-font:  'Roboto Slab', serif;
+$icons: "FontAwesome";
+
+// Base font-size
+$base-fz: 15px;
+
+// Colors
+$main: #ffaf00;
+$secondary: #ffaf00;
+$tertiary: #f7f7f7;
+
+$light: #fff;
+$gray: #363636;
+$light-gray: #ededed;
+$middle-gray: #939393;
+$color-gray: #b4b4b4;
+$dark: #1a3641;
+$black: #000;
+
+// Grid base options
+$row-width: 1200px;
+$col-gap: 10px;
+
+
+// Mobile navigation icon
+$open-nav: "\f0c9";
+$close-nav: "\f00d";
+
+
+// Responsive breakpoints
+$mobile-breakpoints: (
+);  
+$desktop-breakpoints: (
+  "tiny": 480px,
+  "small": 640px,
+  "medium": 768px,
+  "large": 992px,
+  "giant": 1200px,
+  // 'layout': $row-width
+);
+// Number of columns
+$column-count: 12;

@@ -1,0 +1,130 @@
+// Global styles
+///////////////////////////////
+
+// 1. Selection
+// 2. Global classes
+// 4. Links
+// 3. Images
+//  3.1 Cover figure
+//  3.2 Contain figure
+///////////////////////////////
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
+	&,
+	&:before,
+	&:after {
+		box-sizing: inherit;
+	}
+}
+html{
+	scroll-behavior: smooth;
+}
+html, body {
+	color: $main;
+	hyphens: manual;
+	background: $dark;
+	text-size-adjust: none;
+	box-sizing: border-box;
+	font-family: $main-font;
+
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+	font-size: 16px;
+	@include breakpoint(large) {
+		font-size: 20px;
+	}
+}
+body {
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+
+
+
+// 1. Selection
+::selection {
+	color: $light;
+	background-color: $dark;
+}
+
+::-moz-selection {
+	color: $light;
+	background-color: $dark;
+}
+
+
+
+// 2. Global classes
+.clearfix {
+	zoom: 1;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+.t_center {
+	text-align: center;
+}
+
+
+
+// 4. Links
+a {
+	color: $secondary;
+	text-decoration: none;
+	transition: color .3s, background .3s ease-in-out;
+	img {
+		max-width: 100%;
+	}
+	&:hover {
+		color: $main;
+	}
+}
+
+
+
+// 3. Images
+figure {
+	display: inline-block;
+
+	img {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+
+
+// 3.1 Cover figure
+.cover_figure {
+	width: 100%;
+	height: 100%;
+	img {
+		object-fit: cover;
+	}
+	img,
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+
+// 3.2 Contain figure
+.contain_figure {
+	width: 100%;
+	height: 100%;
+	img {
+		object-fit: contain;
+	}
+}

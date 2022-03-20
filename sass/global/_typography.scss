@@ -1,0 +1,138 @@
+// Headlines
+///////////////////////////////
+
+// 1. Custom headline
+// 2. Sub headline class
+// 3. Section headline
+// 4. Text & paragraphs
+// 5. Lists
+///////////////////////////////
+
+h1, h2, h3, h4, h5, h6{
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	small{
+		display: block;
+		font-size: .5em;
+		font-weight: 400;
+		color: #973700;
+	}
+}
+h1{
+	font-size: 34px;
+	margin-bottom: 40px;
+	@include breakpoint(medium) {
+		font-size: 40px;
+	}
+}
+h2{
+	font-size: 28px;
+}
+h3{
+	font-size: 24px;
+}
+h4{
+	font-size: 20px;
+}
+h5{
+	font-size: 18px;
+}
+h6{
+	font-size: 16px;
+}
+
+
+
+// 1. Custom headline
+.title {
+	margin: 16px 0;
+	font-size: 30px;
+	font-weight: 600;
+
+	@include breakpoint(medium) {
+		font-size: 45px;
+	}
+
+	@include breakpoint(large) {
+		font-size: 57px;
+	}
+}
+
+
+
+//  2. Sub headline class
+.sub_title {
+	font-size: 18px;
+
+	@include breakpoint(medium) {
+		font-size: 26.5px;
+	}
+}
+
+
+
+// 3. Section headline
+.section_title {
+	padding: 5px;
+	line-height: 1.8;
+	font-size: 32px;
+	@include breakpoint(medium) {
+		font-size: 32px;
+	}
+}
+
+
+
+//  4. Text & paragraphs
+strong{
+	font-weight: 700;
+}
+em{
+	font-style: italic;
+}
+
+// 4.1 Paragraphs
+p {
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+	&.highlight {
+		font-weight: 700;
+		@include breakpoint(large) {
+			font-size: 24px;
+		}
+	}
+}
+
+
+
+//  5. Lists
+ul.default_list {
+	display: block;
+	list-style: none;
+	li {
+		position: relative;
+		list-style: none;
+		padding-left: 35px;
+		margin-bottom: 20px;
+		line-height: 1.5;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:before {
+			content: "\f6d5";
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			display: inline-block;
+			margin-right: 5px;
+			width: 30px;
+			font-size: 18px;
+			color: $light;
+			@include position(absolute, 3px null null 0);
+			// height: 8px;
+			// border-radius: 100%;
+			// background: $light;
+		}
+	}
+}

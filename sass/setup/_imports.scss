@@ -1,0 +1,32 @@
+// Custom grid for SoftArt
+// Author: K. Dinkov
+///////////////////////////////
+
+// Config file
+@import 'config';
+
+// System files
+@import '../grid/reset';
+@import '../grid/mixins';
+@import '../grid/fonts';
+@import '../grid/responsive';
+
+// Plugins
+// @import '../plugins/slider'; // Slick slider
+// @import '../plugins/nice-select'; // Select dropdown 
+// @import '../plugins/datepicker'; // Select dropdown 
+
+// Global styles
+@import '../global/globals';
+@import '../global/typography';
+// @import '../global/buttons';
+// @import '../global/forms';
+// @import '../global/navigation';
+// @import '../global/popups';
+@import '../global/icons';
+
+// Page design
+@import '../design/roadmap';
+@import '../design/parallax';
+@import '../design/home';
+@import '../design/team';
