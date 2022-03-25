@@ -29,6 +29,34 @@
 
 	<body>
 		<div id="page">
+			<!-- Mobile navi handler -->
+			<input type="checkbox" id="toggle_nav">
+			<!-- Header -->
+			<header role="banner" id="header">
+				<div class="fixed_cont">
+					<div class="row default_center header_middle">
+						<div class="col medium_hide">
+							<label class="toggle_nav open" for="toggle_nav"></label>
+						</div>
+						<nav role="navigation" class="col medium_7 nav_wrapper">
+							<!-- Close mobile navigation -->
+							<label class="toggle_nav close" for="toggle_nav"></label>
+							<ul class="main_navi">
+								<li>
+									<a href="#" title="Home">Home</a>
+								</li>
+								<li>
+									<a href="#" title="Roadmap">Roadmap</a>
+								</li>
+								<li>
+									<a href="#" title="Mint Ryu">Mint Ryu</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- Header end -->
 			<figure class="logo">
 				<img src="./images/logo.png" alt="RyeSekai NFT">
 			</figure>
@@ -50,14 +78,16 @@
 				<div id="main">
 
 					<div class="intro_section">
-						<h1>Rye Sekai's story</h1>
 						<div class="row default_center">
 							<div class="col large_10">
-								<p class="highlight">The Dragon clans have waged war for centuries, depleting the resources of the land as well as their own lifespan. Elders from the 4 tribes gathered in secret and decided to cast the forbidden spell "Grand Reset".</p>
-								<p>Preparations for the spell went well, but as we all know, all is fair in love and war: One of the elder dragons was a traitor, right before the spell was cast, he tried to ruin it. The forbidden spell half backfired.</p>
-								<p>Most of the Dragon population got reset from existence. Only a few remain and those few have their memory reset, but even without memory, it's obvious that they won't survive with so few in numbers.</p>
-								<p>But to start reproducing they would need to gather resources and build the Arcana Tower that would allow them to gather the precious Arcana needed to create their off-spring.</p>
-								<p>After the Arcana Tower is functioning they would need to also build a nursery for the newborn babies.</p>
+								<h1>One NFT = Infinite Worlds</h1>
+								<p>Building bridges that allow for use of Ryu NFTs in other projects and other projects into Ryu's games. With time transitioning to an open standard for integration allowing for anyone to easily integrate with us. End goal: Create an ERC standard allowing anyone owning an NFT to use it in any project they wish!</p>
+								<span class="separator"></span>
+								<h2>Be part of writing History (literally)</h2>
+								<p>Implement a Story DAO where the holders write the story of the dragons. After completion make adaptations of the story to different mediums such as manhwa, manga, anime... a theme park? </p>
+								<span class="separator"></span>
+								<h2>Ever Evolving Game</h2>
+								<p>Taking the iterative approach our game will constantly release updates, implement new mechanics, progression paths and features while listen to feedback form our community allowing it to grow along with them</p>
 							</div>
 						</div>
 					</div>		
@@ -110,39 +140,23 @@
 							<i class="icon fas fa-gem"></i>
 							<div class="details">
 								<span class="title">Phase 2</span>
-								<span>1 month after NFT Mint</span>
 							</div>
+							<p><strong>1 month after NFT Mint</strong></p>
 							<p>ERC-20 Claim</p>
+							<p><strong>2 months after NFT Mint</strong></p>
+							<p>Initiate Breeding</p>
 							</section>
 						</div>
 						<div class="roadmap_row row-1">
 							<section>
-							<i class="icon fas fa-baby"></i>
+							<i class="icon fas fa-handshake"></i>
 							<div class="details">
 								<span class="title">Phase 3</span>
-								<span>2 months after NFT Mint</span>
 							</div>
-							<p>Initiate Breeding </p>
-							</section>
-						</div>
-						<div class="roadmap_row row-2">
-							<section>
-							<i class="icon fas fa-handshake"></i>
-							<div class="details">
-								<span class="title">Phase 4</span>
-								<span>Q3 2022</span>
-							</div>
+							<p><strong>Q3 2022</strong></p>
 							<p>First Collaboration Details</p>
-							</section>
-						</div>
-						<div class="roadmap_row row-1">
-							<section>
-							<i class="icon fas fa-handshake"></i>
-							<div class="details">
-								<span class="title">Phase 5</span>
-								<span>Q4 2022</span>
-							</div>
-							<p>Second Collaboration Details </p>
+							<p><strong>Q4 2022</strong></p>
+							<p>Second Collaboration Details</p>
 							</section>
 						</div>
 						<div class="roadmap_row row-2">
@@ -174,13 +188,19 @@
 						</div>
 					</div>
 
+					<div class="row">
+						<div class="col">
+							<a href="https://whitepaper.ryu-sekai.com/" target="_blank" class="btn" title="Full whitepaper">Full whitepaper</a>
+						</div>
+					</div>
+
 					<div class="the_team" it="team">
 						<div class="row default_center">
 							<div class="col">
 								<h2 class="section_title">The Team</h2>
 							</div>
 							<div class="col large_10">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, minima exercitationem quo fuga nam voluptas non provident, corrupti, neque accusamus possimus eaque. Ea voluptas rerum nam natus eum! Explicabo, voluptatibus.</p>
+								<!-- <p></p> -->
 							</div>
 						</div>
 						<div class="row medium_around">
@@ -189,10 +209,10 @@
 									<img src="./images/Krigol.jpg" alt="Krigol">
 								</figure>
 								<h3>Krigol</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in laboriosam unde repellendus sit voluptatem mollitia impedit corporis vero ullam</p>
+								<p>Kris is a Senior Software Architect and a gamer with 22 levels (years) of gaming. Due to his tech background, he was on and off with crypto for years, but in June 2021 he discovered the pre-growth spike Axie. </p>
 								<ul class="socials">
 									<li>
-										<a href="#" class="fab fa-linkedin"></a>
+										<a href="https://www.linkedin.com/in/krigol" target="_blank" class="fab fa-linkedin"></a>
 									</li>
 								</ul>
 							</div>
@@ -200,11 +220,23 @@
 								<figure>
 									<img src="./images/Krigol.jpg" alt="Krigol">
 								</figure>
-								<h3>Krigol</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in laboriosam unde repellendus sit voluptatem mollitia impedit corporis vero ullam</p>
+								<h3>Warrior Maiden</h3>
+								<p>In Krigol's opinion John is The God of Creation (nothing religious implied). In their history of working together on Axie art, {another not yet released game} and the early stages or Ryu Sekai. </p>
 								<ul class="socials">
 									<li>
-										<a href="#" class="fab fa-linkedin"></a>
+										<a href="https://loise24.artstation.com/" target="_blank" class="fas fa-globe"></a>
+									</li>
+								</ul>
+							</div>
+							<div class="col medium_5">
+								<figure>
+									<img src="./images/vch.jpg" alt="Krigol">
+								</figure>
+								<h3>Vidolch</h3>
+								<p>Vicho is interested in all things tech-related as much as Kris is in love with Dragons. And that's why the tech skill level Vicho has raised over the years is so amazing!</p>
+								<ul class="socials">
+									<li>
+										<a href="https://github.com/vidolch" target="_blank" class="fab fa-github"></a>
 									</li>
 								</ul>
 							</div>
@@ -212,23 +244,11 @@
 								<figure>
 									<img src="./images/Krigol.jpg" alt="Krigol">
 								</figure>
-								<h3>Krigol</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in laboriosam unde repellendus sit voluptatem mollitia impedit corporis vero ullam</p>
+								<h3>Mr. Dinkov</h3>
+								<p>Mr. Dinkov is a real Style Master in everything he does! His attention to detail has quickly risen him to the rank of Senior Web Designer in his company. </p>
 								<ul class="socials">
 									<li>
-										<a href="#" class="fab fa-linkedin"></a>
-									</li>
-								</ul>
-							</div>
-							<div class="col medium_5">
-								<figure>
-									<img src="./images/Krigol.jpg" alt="Krigol">
-								</figure>
-								<h3>Krigol</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in laboriosam unde repellendus sit voluptatem mollitia impedit corporis vero ullam</p>
-								<ul class="socials">
-									<li>
-										<a href="#" class="fab fa-linkedin"></a>
+										<a href="https://www.linkedin.com/in/mrdinkov" target="_blank" class="fab fa-linkedin"></a>
 									</li>
 								</ul>
 							</div>
@@ -242,10 +262,13 @@
 							</div>
 							<div class="col">
 								<ul class="default_list">
-									<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad ullam commodi aperiam fugit</li>
-									<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad ullam commodi aperiam fugit</li>
-									<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad ullam commodi aperiam fugit</li>
-									<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad ullam commodi aperiam fugit</li>
+									<li>Total NFTs: <strong>10 000</strong></li>
+									<li>NFTs withheld for team: <strong>100</strong></li>
+									<li>Traits: <strong>8 (9 if you count horns)</strong></li>
+									<li>Royalty fees: <strong>5%</strong></li>
+									<li>Blockchain: <strong>Ethereum</strong></li>
+									<li>NFT Standard: <strong>ERC-721</strong></li>
+									<li>Asset hosting: <strong>IPFS</strong></li>
 								</ul>
 							</div>
 						</div>

@@ -19,13 +19,14 @@
 // Global styles
 @import '../global/globals';
 @import '../global/typography';
-// @import '../global/buttons';
+@import '../global/buttons';
 // @import '../global/forms';
-// @import '../global/navigation';
+@import '../global/navigation';
 // @import '../global/popups';
 @import '../global/icons';
 
 // Page design
+@import '../design/header';
 @import '../design/roadmap';
 @import '../design/parallax';
 @import '../design/home';
